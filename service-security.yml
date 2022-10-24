@@ -9,6 +9,9 @@ spring:
     driverClassName: org.postgresql.Driver
     username: ${POSTGRES_USER:postgres}
     password: ${POSTGRES_PASSWORD:admin}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
   jooq:
     sql-dialect: org.postgresql.Driver
 
