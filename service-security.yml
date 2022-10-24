@@ -5,10 +5,14 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    driverClassName: org.postgresql.Driver
+    user: postgres
+    password: password
   jooq:
     sql-dialect: H2Dialect
+
+
 eureka:
   client:
     serviceUrl:
