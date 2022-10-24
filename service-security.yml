@@ -10,7 +10,7 @@ spring:
     user: postgres
     password: postgres
   jooq:
-    sql-dialect: H2Dialect
+    sql-dialect: org.postgresql.Driver
 
 
 eureka:
