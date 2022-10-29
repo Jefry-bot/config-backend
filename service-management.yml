@@ -1,7 +1,7 @@
 server:
   port: 8001
   servlet:
-    context-path: /api
+    context-path: /api/management
 
 spring:
   datasource:
@@ -11,7 +11,7 @@ spring:
     password: ${POSTGRES_PASSWORD:admin}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 
   jooq:
     sql-dialect: org.postgresql.Driver
