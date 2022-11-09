@@ -5,6 +5,8 @@ eureka:
   instance:
     preferIpAddress: true
 
+server:
+  port: ${PORT:8761}
 
 spring:
   application:
